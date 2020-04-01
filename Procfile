@@ -1,1 +1,1 @@
-web: python form.py
+web: python index.py
