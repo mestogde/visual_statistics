@@ -1,0 +1,15 @@
+/*Основные стили CSS*/
+h1 {
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+color: red;
+}
+h2 {
+color: #0039e6;
+}
+p {
+
+font-size: 18px;
+color: rgb(179, 179, 179);
+line-height: 1.5;
+}
