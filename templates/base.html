@@ -1,16 +1,40 @@
+<!DOCTYPE html>
 <html>
-    <head>
-      {% if title %}
-      <title>{{ title }} - Microblog</title>
-      {% else %}
-      <title>Welcome to Microblog</title>
-      {% endif %}
-    </head>
+
+	<head>
+		<title>Landing Page — Practice</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/349f2c1dfe.js" crossorigin="anonymous"></script>
+		<link href="static/style.css" rel="stylesheet">
+	</head>
+
     <body>
-        <div>Microblog: <a href="/index">Home</a></div>
-        <hr>
-        {% block content %}{% endblock %}
-        <hr>
-        {% block content2 %}{% endblock %}
+
+        <header>
+            <div class="container">
+                <div class="brand">Visual Statistics</div>
+            </div>
+        </header>
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1>Наглядная статистика</h1>
+            </div>
+        </div>
+
+
+        {% block services %}{% endblock %}
+        {% block blog %}{% endblock %}
+
+
+        <footer>
+            <div class="container">
+                <div class="brand">Visual Statistics</div>
+            </div>
+        </footer>
+
     </body>
 </html>
