@@ -1,14 +1,46 @@
-import content as content
-
 {% extends "base.html" %}
 
-{% block content %}
-    <h1>Hi, {{ user.username }}!</h1>
-    {% for post in posts %}
-    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
-    {% endfor %}
+{% block services %}
+
+
+<div class="services">
+            <div class="container">
+                <h2>Официальная статистика</h2>
+                <div class="service">
+                    <i class="fas fa-male fa-3x" aria-hidden="true"></i>
+                    <p>население</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-tree fa-3x" aria-hidden="true"></i>
+                    <p>окружающая среда</p>
+                </div>
+                <div class="service">
+                    <i class="fas fa-briefcase fa-3x" aria-hidden="true"></i>
+                    <p><a href="http://127.0.0.1:8080/work">рынок труда</a></p>
+                </div>
+            </div>
+        </div>
+
+
 {% endblock %}
 
-{% block content2 %}
-    <h1>Второй блок</h1>
+{% block blog %}
+
+<div class="blog">
+            <div class="container">
+                <h2>Актуальное</h2>
+                <div class="post">
+                    <img src="img/img1.jpg" alt="">
+                    <h3>Заработная плата</h3>
+                    <p>В настоящее время средний уровень оплаты труда по стране составляет порядка 27 500 рублей</p>
+                </div>
+                <div class="post">
+                    <img src="img/img2.jpg" alt="">
+                    <h3>Уровень бедности</h3>
+                    <p>Численность населения с денежными доходами ниже величины прожиточного минимума составляет 18 400 000 человек</p>
+                </div>
+            </div>
+        </div>
+
+
 {% endblock %}
