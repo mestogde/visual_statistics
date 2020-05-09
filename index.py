@@ -4,6 +4,7 @@ from flask_login import LoginManager, login_user
 from werkzeug.utils import redirect
 
 from data import db_session, users
+import os
 
 
 app = Flask(__name__)
