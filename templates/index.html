@@ -1,18 +1,17 @@
 {% extends "base.html" %}
 
+
 {% block services %}
-
-
 <div class="services">
             <div class="container">
                 <h2>Официальная статистика</h2>
                 <div class="service">
                     <i class="fas fa-male fa-3x" aria-hidden="true"></i>
-                    <p>население</p>
+                    <p><a href="http://127.0.0.1:8080/people">население</a></p>
                 </div>
                 <div class="service">
-                    <i class="fas fa-tree fa-3x" aria-hidden="true"></i>
-                    <p>окружающая среда</p>
+                    <i class="fas fa-coins fa-3x" aria-hidden="true"></i>
+                    <p><a href="http://127.0.0.1:8080/inv">инвестиции</a></p>
                 </div>
                 <div class="service">
                     <i class="fas fa-briefcase fa-3x" aria-hidden="true"></i>
@@ -20,8 +19,6 @@
                 </div>
             </div>
         </div>
-
-
 {% endblock %}
 
 {% block blog %}
@@ -41,6 +38,5 @@
                 </div>
             </div>
         </div>
-
 
 {% endblock %}
