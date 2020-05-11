@@ -11,6 +11,7 @@ app = Flask(__name__)
 login_manager = LoginManager()
 login_manager.init_app(app)
 app.config['SECRET_KEY'] = 'yandexlyceum_secret_key'
+db_session.global_init('users.sqlite')
 
 
 @login_manager.user_loader
@@ -160,5 +161,4 @@ def login():
 
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run()
